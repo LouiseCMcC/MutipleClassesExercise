@@ -14,13 +14,13 @@ public class Borrower {
     }
 
     public int borrowedBookCount(){
-        this.borrowedBooks.size();
+        return this.borrowedBooks.size();
     }
 
-    public Library moveBookToBorrowedCollection(Library library){
-        Library library = Library.removeStock(0);
-        borrowedBooks.addBorrowedBook(bookRemoved);
-    }
+//    public Library moveBookToBorrowedCollection(Library library){
+//        Book book = Library.removeStock(0);
+//        this.borrowedBooks.addBorrowedBook(book);
+//    }
 
 
 }

@@ -14,19 +14,19 @@ public class BorrowerTest {
     public void before(){
         borrower = new Borrower("John");
         borrowedBooks =  new BorrowedBooks();
-        library = new Library();
+//        library = new Library();
         library.addStock(library);
     }
 
     @Test
-    public void canMoveBookToBorrowedCollection(){
-
-
-    }
-
-    @Test
     public void canBorrowBook(){
-        borrower.addBorrowedBook(book);
+        borrower.addBorrowedBook(borrowedBooks);
         assertEquals(1, borrower.borrowedBookCount());
     }
+
+//    @Test
+//    public void canMoveBookToBorrowedCollection(){
+//        borrower.moveBookToBorrowedCollection(borrowedBooks);
+//        assertEquals(1, borrower.borrowedBookCount());
+//    }
 }
